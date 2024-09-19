@@ -21,11 +21,11 @@ class _Home2State extends State<Home2> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-             HomeCatagoryWidget(title: 'Product',iconData: Icons.account_circle,widget: Icon(Icons.add_a_photo),onTap: (){
-               Navigator.push(context, MaterialPageRoute(builder: (_)=> ProductScreen(s: "title")));
+             HomeCatagoryWidget(title: 'Product',iconData: Icons.account_circle,widget: const Icon(Icons.add_a_photo),onTap: (){
+               Navigator.push(context, MaterialPageRoute(builder: (_)=> const ProductScreen(s: "title")));
              },),
-             HomeCatagoryWidget(title: 'User',iconData: Icons.add_a_photo,widget: Text("data"), onTap: (){
-               Navigator.push(context, MaterialPageRoute(builder: (_)=> UserListScreen(s: "title")));
+             HomeCatagoryWidget(title: 'User',iconData: Icons.add_a_photo,widget: const Text("data"), onTap: (){
+               Navigator.push(context, MaterialPageRoute(builder: (_)=> const UserListScreen(s: "title")));
              },),
 
             FlutterSwitch(value: onOff, onToggle: (bool value) {
